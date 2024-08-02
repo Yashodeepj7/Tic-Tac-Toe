@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 50vmin;
+    width: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    border-radius: 10px;
+    
+}
+
+.box {
+    border: 2px solid #333;
+    border-radius: 20px;
+    height: 15vmin;
+    width: 15vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #333;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.box:hover {
+    /* background-color: #f9f9f9; */
+    transform: scale(1.05);
+}
+
+.reset, #new-btn {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.reset {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.reset:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#new-btn {
+    background-color: #191913;
+    color: #fff;
+}
+
+#new-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: #e0e0e0;
+}
+
+.abled {
+    pointer-events: auto;
+}
+
+.highlight {
+    background-color: #ffeb3b; 
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 0 8px #ffeb3b; 
+}
+
+.msg-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.hide {
+    display: none;
+}
